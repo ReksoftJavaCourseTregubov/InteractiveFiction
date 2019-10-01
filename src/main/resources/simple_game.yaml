@@ -1,0 +1,30 @@
+states:
+  First state:
+    description: First state description
+    actions:
+      - description: First action
+        nextState: First state
+      - description: Second action
+        nextState: Second state
+
+  Second state:
+    description: Second state description
+    actions:
+      - description: First action
+        nextState: Second state
+      - description: Second action
+        nextState: Fird state
+
+  Fird state:
+    description: Fird state description
+    actions:
+      - description: First action
+        nextState: First state
+      - description: Second action
+        nextState: Last state
+      - description: Fird action
+        nextState: First state
+
+  Last state:
+    description: Last state description
+    isLast: true
